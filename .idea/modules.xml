@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/trade-system/trade-common/trade-common.iml" filepath="$PROJECT_DIR$/trade-system/trade-common/trade-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-system/trade-coupon/trade-coupon.iml" filepath="$PROJECT_DIR$/trade-system/trade-coupon/trade-coupon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-system/trade-dao/trade-dao.iml" filepath="$PROJECT_DIR$/trade-system/trade-dao/trade-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-system/trade-order/trade-order.iml" filepath="$PROJECT_DIR$/trade-system/trade-order/trade-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-system/trade-pay/trade-pay.iml" filepath="$PROJECT_DIR$/trade-system/trade-pay/trade-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-system/trade-system.iml" filepath="$PROJECT_DIR$/trade-system/trade-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-system/trade-user/trade-user.iml" filepath="$PROJECT_DIR$/trade-system/trade-user/trade-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trade-system/trade-web/trade-web.iml" filepath="$PROJECT_DIR$/trade-system/trade-web/trade-web.iml" />
+    </modules>
+  </component>
+</project>

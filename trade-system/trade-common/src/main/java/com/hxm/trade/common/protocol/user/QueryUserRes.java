@@ -5,7 +5,7 @@ import com.hxm.trade.common.protocol.BaseRes;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class QueryUserRes extends BaseRes {
+public class QueryUserRes extends BaseRes{
     private Integer userId;
 
     private String userName;

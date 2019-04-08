@@ -1,12 +1,13 @@
 package com.hxm.trade.dao.pojo;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class TradeCoupon implements Serializable {
     private String couponId;
 
-    private Long couponPrice;
+    private BigDecimal couponPrice;
 
     private Integer userId;
 
@@ -26,11 +27,11 @@ public class TradeCoupon implements Serializable {
         this.couponId = couponId == null ? null : couponId.trim();
     }
 
-    public Long getCouponPrice() {
+    public BigDecimal getCouponPrice() {
         return couponPrice;
     }
 
-    public void setCouponPrice(Long couponPrice) {
+    public void setCouponPrice(BigDecimal couponPrice) {
         this.couponPrice = couponPrice;
     }
 

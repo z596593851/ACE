@@ -1,6 +1,8 @@
 package com.hxm.trade.user.api;
 
 import com.hxm.trade.common.api.IUserApi;
+import com.hxm.trade.common.protocol.user.ChangeUserMoneyReq;
+import com.hxm.trade.common.protocol.user.ChangeUserMoneyRes;
 import com.hxm.trade.common.protocol.user.QueryUserReq;
 import com.hxm.trade.common.protocol.user.QueryUserRes;
 import com.hxm.trade.user.service.IUserService;
@@ -21,5 +23,9 @@ public class UserApiImpl implements IUserApi {
     public QueryUserRes queryUserById(@RequestBody QueryUserReq queryUserReq) {
 
         return userService.queryUserById(queryUserReq);
+    }
+
+    public ChangeUserMoneyRes changeUserMoney(ChangeUserMoneyReq changeUserMoneyReq) {
+        return null;
     }
 }

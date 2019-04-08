@@ -1,5 +1,6 @@
 package com.hxm.trade.dao.pojo;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -185,52 +186,52 @@ public class TradeCouponExample {
             return (Criteria) this;
         }
 
-        public Criteria andCouponPriceEqualTo(Long value) {
+        public Criteria andCouponPriceEqualTo(BigDecimal value) {
             addCriterion("coupon_price =", value, "couponPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCouponPriceNotEqualTo(Long value) {
+        public Criteria andCouponPriceNotEqualTo(BigDecimal value) {
             addCriterion("coupon_price <>", value, "couponPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCouponPriceGreaterThan(Long value) {
+        public Criteria andCouponPriceGreaterThan(BigDecimal value) {
             addCriterion("coupon_price >", value, "couponPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCouponPriceGreaterThanOrEqualTo(Long value) {
+        public Criteria andCouponPriceGreaterThanOrEqualTo(BigDecimal value) {
             addCriterion("coupon_price >=", value, "couponPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCouponPriceLessThan(Long value) {
+        public Criteria andCouponPriceLessThan(BigDecimal value) {
             addCriterion("coupon_price <", value, "couponPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCouponPriceLessThanOrEqualTo(Long value) {
+        public Criteria andCouponPriceLessThanOrEqualTo(BigDecimal value) {
             addCriterion("coupon_price <=", value, "couponPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCouponPriceIn(List<Long> values) {
+        public Criteria andCouponPriceIn(List<BigDecimal> values) {
             addCriterion("coupon_price in", values, "couponPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCouponPriceNotIn(List<Long> values) {
+        public Criteria andCouponPriceNotIn(List<BigDecimal> values) {
             addCriterion("coupon_price not in", values, "couponPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCouponPriceBetween(Long value1, Long value2) {
+        public Criteria andCouponPriceBetween(BigDecimal value1, BigDecimal value2) {
             addCriterion("coupon_price between", value1, value2, "couponPrice");
             return (Criteria) this;
         }
 
-        public Criteria andCouponPriceNotBetween(Long value1, Long value2) {
+        public Criteria andCouponPriceNotBetween(BigDecimal value1, BigDecimal value2) {
             addCriterion("coupon_price not between", value1, value2, "couponPrice");
             return (Criteria) this;
         }

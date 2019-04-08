@@ -71,7 +71,7 @@
         <!--<table tableName="trade_user">-->
             <!--<generatedKey column="user_id" sqlStatement="MySql" identity="true"/>-->
         <!--</table>-->
-        <!--<table tableName="trade_user_money_log"/>-->
+        <table tableName="trade_coupon"/>
 
 
 

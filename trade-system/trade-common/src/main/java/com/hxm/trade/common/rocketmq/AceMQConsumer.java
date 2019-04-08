@@ -13,11 +13,11 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-@Component
+//@Component
 @PropertySource(value = {"classpath:spring-value.properties"})
 public class AceMQConsumer {
     public static final Logger LOGGER= LoggerFactory.getLogger(AceMQConsumer.class);
-    @Autowired
+//    @Autowired
     private IMessageProcessor messageProcessor;
     @Value("${groupName}")
     private String groupName;
@@ -29,7 +29,7 @@ public class AceMQConsumer {
     private int consumeThreadMin=20;
     private int consumeThreadMax=64;
 
-    @PostConstruct
+//    @PostConstruct
     public void init() throws AceMQException{
         if(StringUtils.isBlank(groupName)){
             throw new AceMQException("groupName is blank");

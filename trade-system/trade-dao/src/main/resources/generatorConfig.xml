@@ -60,18 +60,18 @@
 
 
 
-
-        <table tableName="trade_coupon"/>
-        <table tableName="trade_goods">
-            <generatedKey column="goods_id" sqlStatement="MySql" identity="true"/>
-        </table>
-        <table tableName="trade_goods_number_log"/>
-        <table tableName="trade_order"/>
-        <table tableName="trade_pay"/>
-        <table tableName="trade_user">
-            <generatedKey column="user_id" sqlStatement="MySql" identity="true"/>
-        </table>
         <table tableName="trade_user_money_log"/>
+        <!--<table tableName="trade_coupon"/>-->
+        <!--<table tableName="trade_goods">-->
+            <!--<generatedKey column="goods_id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="trade_goods_number_log"/>-->
+        <!--<table tableName="trade_order"/>-->
+        <!--<table tableName="trade_pay"/>-->
+        <!--<table tableName="trade_user">-->
+            <!--<generatedKey column="user_id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="trade_user_money_log"/>-->
 
 
 

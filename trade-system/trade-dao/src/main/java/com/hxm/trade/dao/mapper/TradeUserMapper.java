@@ -27,4 +27,8 @@ public interface TradeUserMapper {
     int updateByPrimaryKeySelective(TradeUser record);
 
     int updateByPrimaryKey(TradeUser record);
+
+    int reduceUserMoney(TradeUser record);
+
+    int addUserMoney(TradeUser record);
 }

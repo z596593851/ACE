@@ -14,22 +14,18 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 //@Component
-@PropertySource(value = {"classpath:spring-value.properties"})
 public class AceMQConsumer {
     public static final Logger LOGGER= LoggerFactory.getLogger(AceMQConsumer.class);
 //    @Autowired
     private IMessageProcessor messageProcessor;
-    @Value("${groupName}")
     private String groupName;
-    @Value("${topic}")
     private String topic;
-    private String tag="*";
-    @Value("${namesrvAddr}")
+    private String tag;
     private String namesrvAddr;
     private int consumeThreadMin=20;
     private int consumeThreadMax=64;
 
-//    @PostConstruct
+    //    @PostConstruct
     public void init() throws AceMQException{
         if(StringUtils.isBlank(groupName)){
             throw new AceMQException("groupName is blank");
@@ -61,5 +57,24 @@ public class AceMQConsumer {
 
 
         }
+    }
+    public void setMessageProcessor(IMessageProcessor messageProcessor) {
+        this.messageProcessor = messageProcessor;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
+    public void setNamesrvAddr(String namesrvAddr) {
+        this.namesrvAddr = namesrvAddr;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
     }
 }

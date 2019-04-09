@@ -54,7 +54,8 @@ public class OrderServiceImpl implements IOrderService {
             checkConfirmOrderReq(confirmOrderReq,queryGoodsRes);
             //2、创建不可见订单
             String orderId=saveNoConfirmOrder(confirmOrderReq);
-            //3、调用远程服务
+            //3、调用远程服务:使用优惠券、扣余额、扣库存
+            callRemoteService(orderId,confirmOrderReq);
 
 
         }catch (Exception e){

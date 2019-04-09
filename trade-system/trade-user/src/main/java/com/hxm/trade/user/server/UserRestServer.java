@@ -15,7 +15,7 @@ public class UserRestServer {
         ServletContextHandler springMvcHandler=new ServletContextHandler();
         springMvcHandler.setContextPath("/"+TradeEnums.RestServerEnum.USER.getContextPath());
         XmlWebApplicationContext context=new XmlWebApplicationContext();
-        context.setConfigLocation("classpath:springmvc.xml");
+        context.setConfigLocation("classpath:spring-web-userspring-web-user.xml");
         springMvcHandler.addEventListener(new ContextLoaderListener(context));
         springMvcHandler.addServlet(new ServletHolder(new DispatcherServlet(context)),"/*");
         server.setHandler(springMvcHandler);
